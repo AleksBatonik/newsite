@@ -4,14 +4,59 @@
 <head>
     <meta charset="utf-8" />
     <title>Комплектующие для планшетов и телефонов уфа | Башкирия | ImobilCO</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
  
-<body>
+<body>   
+ <header class="main-header">
+        <h1 class="visually-hidden">IMobilCo Интернет-магазин комплектующих для мобильных гаджетов</h1>
+        <a class="main-heder-logo">
+            <img src="img/logo.png" alt="тут должно быть фото логотипа" />
+        </a>
+        <nav class="main-navigation">
+            <div class="main-navigation-wrapper">
+                <div class="container">
+                    <ul class="site-navigation">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="zapchastynoytbyk.html">Запчасти для ноутбуков</a></li>
+                        <li><a href="planshety.html">Запчасти для планшетов</a></li>
+                        <li><a href="telephony.html">Запчасти для телефонов</a></li>
+                        <li><a href="ycenka.html">Уцененный товар</a></li>
+                        <li><a href="contakt.html">Контакты</a></li>
+                    </ul>
+                    <ul class="user-nafigation">
+                        <li><a href="-user-enter">Вход</a></li>
+                        <li><a href="user-registration">Регистрация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <form action="/search" method="get">
+            <input name="query" type="search" value>
+            <input name type="submit" value="Найти">
+        </form>
+
+        
+        <b>Звоните +7(963)-140-10-70</b>
+    </header>
+    <main>
+        <label>
+            Сортировка
+            <input list="sort">
+        </label>
+        <datalist id="sort">
+            <option value="Новейшие">
+            <option value="Цена(низкая-высокая)">
+            <option value="Цена(высокая-низкая)">
+            <option value="Название А-Я">
+            <option value="Название Я-А">
+        </datalist>
+    </main>
     <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите свой логин и пароль.</p>
-        <form class="login-form" action="" method="post">
+        <form class="login-form" action="#" method="post">
             <p>
                 <label class="visually-hidden" for="user-login">Логин</label>
                 <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
@@ -32,45 +77,6 @@
         </form>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
-    <h1 class="visually-hidden">IMobilCo Интернет-магазин комплектующих для мобильных гаджетов</h1>
-    <a class="main-heder-logo">
-        <img src="img/logo.png" alt="тут должно быть фото логотипа" />
-    </a>
-    <header class="main-heder">
-        <nav class="main-navigation">
-            <ul class="site-navigation">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="zapchastynoytbyk.html">Запчасти для ноутбуков</a></li>
-                <li><a href="planshety.html">Запчасти для планшетов</a></li>
-                <li><a href="telephony.html">Запчасти для телефонов</a></li>
-                <li><a href="ycenka.html">Уцененный товар</a></li>
-                <li><a href="contakt.html">Контакты</a></li>
-            </ul>
-        </nav>
-        <form action="/search" method="get">
-            <input name="query" type="search" value>
-            <input name type="submit" value="Найти">
-            </form>
-
-        <ul class="user-nafigation">
-            <li><a href="-user-enter">Вход</a></li>
-            <li><a href="user-registration">Регистрация</a></li>
-        </ul>
-        <b>Звоните +7(963)-140-10-70</b>
-    </header>
-    <main>
-        <label>
-            Сортировка
-            <input list="sort">
-        </label>
-            <datalist id="sort">
-                <option value="Новейшие">
-                <option value="Цена(низкая-высокая)">
-                <option value="Цена(высокая-низкая)">
-                <option value="Название А-Я">
-                <option value="Название Я-А">
-        </datalist>
-    </main>
     <footer class="main-footer">
         <p class="footer-contacts">
             Cяжитесь с нами<br>
@@ -81,9 +87,9 @@
         <div class="footer-social">
             <b>Мы в Соц.сетях</b>
             <ul>
-                <li><a class="social-bottom" href="https://vk.com/leshabatonik" >Вконтакте</a></li>
-                <li><a class="social-bottom" href="#" aria-label="Фейсбук"></a></li>
-                <li><a class="social-bottom" href="#" aria-label="Инстаграмм"></a></li>
+                <li><a class="social-bottom" href="https://vk.com/leshabatonik">Вконтакте</a></li>
+                <li><a class="social-bottom" href="#">Фейсбук</a></li>
+                <li><a class="social-bottom" href="#">Инстаграмм</a></li>
             </ul>
         </div>
 
